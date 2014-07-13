@@ -1,1001 +1,516 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>0FA49A067C164BE5912D9B90</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>1A8A8A26B6C7479A9186DA19</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EFB15EB263524DB8A3DC848F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B70C0B7419720D550089AA10</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B70C0B8219720D550089AA10</string>
-				<string>B70C0B9619720D550089AA10</string>
-				<string>B70C0B7F19720D550089AA10</string>
-				<string>B70C0B7E19720D550089AA10</string>
-				<string>F787619F31894B6DBE5E949A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B70C0B7519720D550089AA10</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0510</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>B70C0B7819720D550089AA10</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>B70C0B7419720D550089AA10</string>
-			<key>productRefGroup</key>
-			<string>B70C0B7E19720D550089AA10</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>B70C0B7C19720D550089AA10</string>
-				<string>B70C0B8C19720D550089AA10</string>
-			</array>
-		</dict>
-		<key>B70C0B7819720D550089AA10</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>B70C0B9E19720D550089AA10</string>
-				<string>B70C0B9F19720D550089AA10</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>B70C0B7919720D550089AA10</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>B70C0BAF19720E440089AA10</string>
-				<string>B70C0BB219720E640089AA10</string>
-				<string>B70C0BAC19720E350089AA10</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>B70C0B7A19720D550089AA10</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>B70C0B8119720D550089AA10</string>
-				<string>1A8A8A26B6C7479A9186DA19</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>B70C0B7B19720D550089AA10</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>dstPath</key>
-			<string>include/$(PRODUCT_NAME)</string>
-			<key>dstSubfolderSpec</key>
-			<string>16</string>
-			<key>files</key>
-			<array>
-				<string>B70C0BB319720E7C0089AA10</string>
-				<string>B70C0BB419720E7C0089AA10</string>
-				<string>B70C0BB519720E7C0089AA10</string>
-				<string>B70C0BB619720E7C0089AA10</string>
-			</array>
-			<key>isa</key>
-			<string>PBXCopyFilesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>B70C0B7C19720D550089AA10</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>B70C0BA019720D550089AA10</string>
-			<key>buildPhases</key>
-			<array>
-				<string>0FA49A067C164BE5912D9B90</string>
-				<string>B70C0B7919720D550089AA10</string>
-				<string>B70C0B7A19720D550089AA10</string>
-				<string>B70C0B7B19720D550089AA10</string>
-				<string>CDA7D369FAB743DE8F6C7A8E</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>RaspberryPiSDK</string>
-			<key>productName</key>
-			<string>RaspberryPiSDK</string>
-			<key>productReference</key>
-			<string>B70C0B7D19720D550089AA10</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>B70C0B7D19720D550089AA10</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libRaspberryPiSDK.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>B70C0B7E19720D550089AA10</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B70C0B7D19720D550089AA10</string>
-				<string>B70C0B8D19720D550089AA10</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B70C0B7F19720D550089AA10</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B70C0B8019720D550089AA10</string>
-				<string>B70C0B8E19720D550089AA10</string>
-				<string>B70C0B9119720D550089AA10</string>
-				<string>EFB15EB263524DB8A3DC848F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B70C0B8019720D550089AA10</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>B70C0B8119720D550089AA10</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B70C0B8019720D550089AA10</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B70C0B8219720D550089AA10</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B70C0BA619720DE30089AA10</string>
-				<string>B70C0BB019720E640089AA10</string>
-				<string>B70C0BB119720E640089AA10</string>
-				<string>B70C0BAA19720E350089AA10</string>
-				<string>B70C0BAB19720E350089AA10</string>
-				<string>B70C0BAD19720E440089AA10</string>
-				<string>B70C0BAE19720E440089AA10</string>
-				<string>B70C0B8319720D550089AA10</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>RaspberryPiSDK</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B70C0B8319720D550089AA10</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B70C0B8419720D550089AA10</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B70C0B8419720D550089AA10</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>RaspberryPiSDK-Prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B70C0B8919720D550089AA10</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>B70C0B9D19720D550089AA10</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>B70C0B8A19720D550089AA10</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>B70C0B8F19720D550089AA10</string>
-				<string>B70C0B9219720D550089AA10</string>
-				<string>B70C0B9519720D550089AA10</string>
-				<string>B70C0B9019720D550089AA10</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>B70C0B8B19720D550089AA10</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>B70C0B9B19720D550089AA10</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>B70C0B8C19720D550089AA10</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>B70C0BA319720D550089AA10</string>
-			<key>buildPhases</key>
-			<array>
-				<string>B70C0B8919720D550089AA10</string>
-				<string>B70C0B8A19720D550089AA10</string>
-				<string>B70C0B8B19720D550089AA10</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>B70C0B9419720D550089AA10</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>RaspberryPiSDKTests</string>
-			<key>productName</key>
-			<string>RaspberryPiSDKTests</string>
-			<key>productReference</key>
-			<string>B70C0B8D19720D550089AA10</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>B70C0B8D19720D550089AA10</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>RaspberryPiSDKTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>B70C0B8E19720D550089AA10</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>XCTest.framework</string>
-			<key>path</key>
-			<string>Library/Frameworks/XCTest.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>B70C0B8F19720D550089AA10</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B70C0B8E19720D550089AA10</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B70C0B9019720D550089AA10</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B70C0B8019720D550089AA10</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B70C0B9119720D550089AA10</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>B70C0B9219720D550089AA10</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B70C0B9119720D550089AA10</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B70C0B9319720D550089AA10</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>B70C0B7519720D550089AA10</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>B70C0B7C19720D550089AA10</string>
-			<key>remoteInfo</key>
-			<string>RaspberryPiSDK</string>
-		</dict>
-		<key>B70C0B9419720D550089AA10</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>B70C0B7C19720D550089AA10</string>
-			<key>targetProxy</key>
-			<string>B70C0B9319720D550089AA10</string>
-		</dict>
-		<key>B70C0B9519720D550089AA10</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B70C0B7D19720D550089AA10</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B70C0B9619720D550089AA10</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B70C0B9C19720D550089AA10</string>
-				<string>B70C0B9719720D550089AA10</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>RaspberryPiSDKTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B70C0B9719720D550089AA10</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B70C0B9819720D550089AA10</string>
-				<string>B70C0B9919720D550089AA10</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B70C0B9819720D550089AA10</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>RaspberryPiSDKTests-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B70C0B9919720D550089AA10</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B70C0B9A19720D550089AA10</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B70C0B9A19720D550089AA10</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B70C0B9B19720D550089AA10</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B70C0B9919720D550089AA10</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B70C0B9C19720D550089AA10</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>RaspberryPiSDKTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B70C0B9D19720D550089AA10</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B70C0B9C19720D550089AA10</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B70C0B9E19720D550089AA10</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>B70C0B9F19720D550089AA10</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>B70C0BA019720D550089AA10</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>B70C0BA119720D550089AA10</string>
-				<string>B70C0BA219720D550089AA10</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>B70C0BA119720D550089AA10</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>F787619F31894B6DBE5E949A</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>DSTROOT</key>
-				<string>/tmp/RaspberryPiSDK.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>RaspberryPiSDK/RaspberryPiSDK-Prefix.pch</string>
-				<key>OTHER_LDFLAGS</key>
-				<string>-ObjC</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>B70C0BA219720D550089AA10</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>F787619F31894B6DBE5E949A</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>DSTROOT</key>
-				<string>/tmp/RaspberryPiSDK.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>RaspberryPiSDK/RaspberryPiSDK-Prefix.pch</string>
-				<key>OTHER_LDFLAGS</key>
-				<string>-ObjC</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>B70C0BA319720D550089AA10</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>B70C0BA419720D550089AA10</string>
-				<string>B70C0BA519720D550089AA10</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>B70C0BA419720D550089AA10</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>RaspberryPiSDK/RaspberryPiSDK-Prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>RaspberryPiSDKTests/RaspberryPiSDKTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>B70C0BA519720D550089AA10</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>RaspberryPiSDK/RaspberryPiSDK-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>RaspberryPiSDKTests/RaspberryPiSDKTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>B70C0BA619720DE30089AA10</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>RaspberryPiSDK.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B70C0BAA19720E350089AA10</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>RPISessionManager.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B70C0BAB19720E350089AA10</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>RPISessionManager.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B70C0BAC19720E350089AA10</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B70C0BAB19720E350089AA10</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B70C0BAD19720E440089AA10</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>RPIDiscoveryManager.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B70C0BAE19720E440089AA10</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>RPIDiscoveryManager.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B70C0BAF19720E440089AA10</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B70C0BAE19720E440089AA10</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B70C0BB019720E640089AA10</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>RPIDevice.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B70C0BB119720E640089AA10</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>RPIDevice.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B70C0BB219720E640089AA10</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B70C0BB119720E640089AA10</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B70C0BB319720E7C0089AA10</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B70C0BA619720DE30089AA10</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B70C0BB419720E7C0089AA10</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B70C0BB019720E640089AA10</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B70C0BB519720E7C0089AA10</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B70C0BAA19720E350089AA10</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B70C0BB619720E7C0089AA10</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B70C0BAD19720E440089AA10</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CDA7D369FAB743DE8F6C7A8E</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Pods-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>EFB15EB263524DB8A3DC848F</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>F787619F31894B6DBE5E949A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Pods.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>B70C0B7519720D550089AA10</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A8A8A26B6C7479A9186DA19 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB15EB263524DB8A3DC848F /* libPods.a */; };
+		B70C0B8119720D550089AA10 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70C0B8019720D550089AA10 /* Foundation.framework */; };
+		B70C0B8F19720D550089AA10 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70C0B8E19720D550089AA10 /* XCTest.framework */; };
+		B70C0B9019720D550089AA10 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70C0B8019720D550089AA10 /* Foundation.framework */; };
+		B70C0B9219720D550089AA10 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70C0B9119720D550089AA10 /* UIKit.framework */; };
+		B70C0B9519720D550089AA10 /* libRaspberryPiSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B70C0B7D19720D550089AA10 /* libRaspberryPiSDK.a */; };
+		B70C0B9B19720D550089AA10 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B70C0B9919720D550089AA10 /* InfoPlist.strings */; };
+		B70C0B9D19720D550089AA10 /* RaspberryPiSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B70C0B9C19720D550089AA10 /* RaspberryPiSDKTests.m */; };
+		B70C0BAC19720E350089AA10 /* RPISessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B70C0BAB19720E350089AA10 /* RPISessionManager.m */; };
+		B70C0BAF19720E440089AA10 /* RPIDiscoveryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B70C0BAE19720E440089AA10 /* RPIDiscoveryManager.m */; };
+		B70C0BB219720E640089AA10 /* RPIDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = B70C0BB119720E640089AA10 /* RPIDevice.m */; };
+		B70C0BB319720E7C0089AA10 /* RaspberryPiSDK.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B70C0BA619720DE30089AA10 /* RaspberryPiSDK.h */; };
+		B70C0BB419720E7C0089AA10 /* RPIDevice.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B70C0BB019720E640089AA10 /* RPIDevice.h */; };
+		B70C0BB519720E7C0089AA10 /* RPISessionManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B70C0BAA19720E350089AA10 /* RPISessionManager.h */; };
+		B70C0BB619720E7C0089AA10 /* RPIDiscoveryManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B70C0BAD19720E440089AA10 /* RPIDiscoveryManager.h */; };
+		B755330219721C1E007E8E3D /* RPILocalDeviceDiscoveryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B755330119721C1E007E8E3D /* RPILocalDeviceDiscoveryManager.m */; };
+		B755330B19726048007E8E3D /* RPIError.m in Sources */ = {isa = PBXBuildFile; fileRef = B755330A19726048007E8E3D /* RPIError.m */; };
+		B755330C1972605B007E8E3D /* RPIError.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B755330919726048007E8E3D /* RPIError.h */; };
+		B755330F1972618A007E8E3D /* RPINMSSHErrorHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B755330E1972618A007E8E3D /* RPINMSSHErrorHandler.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B70C0B9319720D550089AA10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B70C0B7519720D550089AA10 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B70C0B7C19720D550089AA10;
+			remoteInfo = RaspberryPiSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B70C0B7B19720D550089AA10 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				B755330C1972605B007E8E3D /* RPIError.h in CopyFiles */,
+				B70C0BB319720E7C0089AA10 /* RaspberryPiSDK.h in CopyFiles */,
+				B70C0BB419720E7C0089AA10 /* RPIDevice.h in CopyFiles */,
+				B70C0BB519720E7C0089AA10 /* RPISessionManager.h in CopyFiles */,
+				B70C0BB619720E7C0089AA10 /* RPIDiscoveryManager.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B70C0B7D19720D550089AA10 /* libRaspberryPiSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRaspberryPiSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B70C0B8019720D550089AA10 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B70C0B8419720D550089AA10 /* RaspberryPiSDK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RaspberryPiSDK-Prefix.pch"; sourceTree = "<group>"; };
+		B70C0B8D19720D550089AA10 /* RaspberryPiSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaspberryPiSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B70C0B8E19720D550089AA10 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B70C0B9119720D550089AA10 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		B70C0B9819720D550089AA10 /* RaspberryPiSDKTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RaspberryPiSDKTests-Info.plist"; sourceTree = "<group>"; };
+		B70C0B9A19720D550089AA10 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B70C0B9C19720D550089AA10 /* RaspberryPiSDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RaspberryPiSDKTests.m; sourceTree = "<group>"; };
+		B70C0BA619720DE30089AA10 /* RaspberryPiSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RaspberryPiSDK.h; sourceTree = "<group>"; };
+		B70C0BAA19720E350089AA10 /* RPISessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPISessionManager.h; sourceTree = "<group>"; };
+		B70C0BAB19720E350089AA10 /* RPISessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPISessionManager.m; sourceTree = "<group>"; };
+		B70C0BAD19720E440089AA10 /* RPIDiscoveryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPIDiscoveryManager.h; sourceTree = "<group>"; };
+		B70C0BAE19720E440089AA10 /* RPIDiscoveryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPIDiscoveryManager.m; sourceTree = "<group>"; };
+		B70C0BB019720E640089AA10 /* RPIDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPIDevice.h; sourceTree = "<group>"; };
+		B70C0BB119720E640089AA10 /* RPIDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPIDevice.m; sourceTree = "<group>"; };
+		B755330019721C1E007E8E3D /* RPILocalDeviceDiscoveryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RPILocalDeviceDiscoveryManager.h; path = Internal/RPILocalDeviceDiscoveryManager.h; sourceTree = "<group>"; };
+		B755330119721C1E007E8E3D /* RPILocalDeviceDiscoveryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RPILocalDeviceDiscoveryManager.m; path = Internal/RPILocalDeviceDiscoveryManager.m; sourceTree = "<group>"; };
+		B755330319721C69007E8E3D /* RPIDeviceDiscoveryManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RPIDeviceDiscoveryManager.h; path = Internal/RPIDeviceDiscoveryManager.h; sourceTree = "<group>"; };
+		B755330419722171007E8E3D /* RPIDiscoveryManagerStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPIDiscoveryManagerStatus.h; sourceTree = "<group>"; };
+		B755330919726048007E8E3D /* RPIError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPIError.h; sourceTree = "<group>"; };
+		B755330A19726048007E8E3D /* RPIError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPIError.m; sourceTree = "<group>"; };
+		B755330D1972618A007E8E3D /* RPINMSSHErrorHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RPINMSSHErrorHandler.h; path = Internal/RPINMSSHErrorHandler.h; sourceTree = "<group>"; };
+		B755330E1972618A007E8E3D /* RPINMSSHErrorHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RPINMSSHErrorHandler.m; path = Internal/RPINMSSHErrorHandler.m; sourceTree = "<group>"; };
+		EFB15EB263524DB8A3DC848F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F787619F31894B6DBE5E949A /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B70C0B7A19720D550089AA10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B70C0B8119720D550089AA10 /* Foundation.framework in Frameworks */,
+				1A8A8A26B6C7479A9186DA19 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B70C0B8A19720D550089AA10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B70C0B8F19720D550089AA10 /* XCTest.framework in Frameworks */,
+				B70C0B9219720D550089AA10 /* UIKit.framework in Frameworks */,
+				B70C0B9519720D550089AA10 /* libRaspberryPiSDK.a in Frameworks */,
+				B70C0B9019720D550089AA10 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B70C0B7419720D550089AA10 = {
+			isa = PBXGroup;
+			children = (
+				B70C0B8219720D550089AA10 /* RaspberryPiSDK */,
+				B70C0B9619720D550089AA10 /* RaspberryPiSDKTests */,
+				B70C0B7F19720D550089AA10 /* Frameworks */,
+				B70C0B7E19720D550089AA10 /* Products */,
+				F787619F31894B6DBE5E949A /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		B70C0B7E19720D550089AA10 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B70C0B7D19720D550089AA10 /* libRaspberryPiSDK.a */,
+				B70C0B8D19720D550089AA10 /* RaspberryPiSDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B70C0B7F19720D550089AA10 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B70C0B8019720D550089AA10 /* Foundation.framework */,
+				B70C0B8E19720D550089AA10 /* XCTest.framework */,
+				B70C0B9119720D550089AA10 /* UIKit.framework */,
+				EFB15EB263524DB8A3DC848F /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B70C0B8219720D550089AA10 /* RaspberryPiSDK */ = {
+			isa = PBXGroup;
+			children = (
+				B70C0BA619720DE30089AA10 /* RaspberryPiSDK.h */,
+				B70C0BB019720E640089AA10 /* RPIDevice.h */,
+				B70C0BB119720E640089AA10 /* RPIDevice.m */,
+				B755330919726048007E8E3D /* RPIError.h */,
+				B755330A19726048007E8E3D /* RPIError.m */,
+				B70C0BAA19720E350089AA10 /* RPISessionManager.h */,
+				B70C0BAB19720E350089AA10 /* RPISessionManager.m */,
+				B70C0BAD19720E440089AA10 /* RPIDiscoveryManager.h */,
+				B70C0BAE19720E440089AA10 /* RPIDiscoveryManager.m */,
+				B755330419722171007E8E3D /* RPIDiscoveryManagerStatus.h */,
+				B75532FF19721BDF007E8E3D /* Internal */,
+				B70C0B8319720D550089AA10 /* Supporting Files */,
+			);
+			path = RaspberryPiSDK;
+			sourceTree = "<group>";
+		};
+		B70C0B8319720D550089AA10 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B70C0B8419720D550089AA10 /* RaspberryPiSDK-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B70C0B9619720D550089AA10 /* RaspberryPiSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				B70C0B9C19720D550089AA10 /* RaspberryPiSDKTests.m */,
+				B70C0B9719720D550089AA10 /* Supporting Files */,
+			);
+			path = RaspberryPiSDKTests;
+			sourceTree = "<group>";
+		};
+		B70C0B9719720D550089AA10 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B70C0B9819720D550089AA10 /* RaspberryPiSDKTests-Info.plist */,
+				B70C0B9919720D550089AA10 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B75532FF19721BDF007E8E3D /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				B755330D1972618A007E8E3D /* RPINMSSHErrorHandler.h */,
+				B755330E1972618A007E8E3D /* RPINMSSHErrorHandler.m */,
+				B755330319721C69007E8E3D /* RPIDeviceDiscoveryManager.h */,
+				B755330019721C1E007E8E3D /* RPILocalDeviceDiscoveryManager.h */,
+				B755330119721C1E007E8E3D /* RPILocalDeviceDiscoveryManager.m */,
+			);
+			name = Internal;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B70C0B7C19720D550089AA10 /* RaspberryPiSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B70C0BA019720D550089AA10 /* Build configuration list for PBXNativeTarget "RaspberryPiSDK" */;
+			buildPhases = (
+				0FA49A067C164BE5912D9B90 /* Check Pods Manifest.lock */,
+				B70C0B7919720D550089AA10 /* Sources */,
+				B70C0B7A19720D550089AA10 /* Frameworks */,
+				B70C0B7B19720D550089AA10 /* CopyFiles */,
+				CDA7D369FAB743DE8F6C7A8E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RaspberryPiSDK;
+			productName = RaspberryPiSDK;
+			productReference = B70C0B7D19720D550089AA10 /* libRaspberryPiSDK.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B70C0B8C19720D550089AA10 /* RaspberryPiSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B70C0BA319720D550089AA10 /* Build configuration list for PBXNativeTarget "RaspberryPiSDKTests" */;
+			buildPhases = (
+				B70C0B8919720D550089AA10 /* Sources */,
+				B70C0B8A19720D550089AA10 /* Frameworks */,
+				B70C0B8B19720D550089AA10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B70C0B9419720D550089AA10 /* PBXTargetDependency */,
+			);
+			name = RaspberryPiSDKTests;
+			productName = RaspberryPiSDKTests;
+			productReference = B70C0B8D19720D550089AA10 /* RaspberryPiSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B70C0B7519720D550089AA10 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = B70C0B7819720D550089AA10 /* Build configuration list for PBXProject "RaspberryPiSDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B70C0B7419720D550089AA10;
+			productRefGroup = B70C0B7E19720D550089AA10 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B70C0B7C19720D550089AA10 /* RaspberryPiSDK */,
+				B70C0B8C19720D550089AA10 /* RaspberryPiSDKTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B70C0B8B19720D550089AA10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B70C0B9B19720D550089AA10 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0FA49A067C164BE5912D9B90 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CDA7D369FAB743DE8F6C7A8E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B70C0B7919720D550089AA10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B755330219721C1E007E8E3D /* RPILocalDeviceDiscoveryManager.m in Sources */,
+				B70C0BAF19720E440089AA10 /* RPIDiscoveryManager.m in Sources */,
+				B70C0BB219720E640089AA10 /* RPIDevice.m in Sources */,
+				B70C0BAC19720E350089AA10 /* RPISessionManager.m in Sources */,
+				B755330B19726048007E8E3D /* RPIError.m in Sources */,
+				B755330F1972618A007E8E3D /* RPINMSSHErrorHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B70C0B8919720D550089AA10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B70C0B9D19720D550089AA10 /* RaspberryPiSDKTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B70C0B9419720D550089AA10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B70C0B7C19720D550089AA10 /* RaspberryPiSDK */;
+			targetProxy = B70C0B9319720D550089AA10 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B70C0B9919720D550089AA10 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B70C0B9A19720D550089AA10 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B70C0B9E19720D550089AA10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B70C0B9F19720D550089AA10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B70C0BA119720D550089AA10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F787619F31894B6DBE5E949A /* Pods.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/RaspberryPiSDK.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RaspberryPiSDK/RaspberryPiSDK-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B70C0BA219720D550089AA10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F787619F31894B6DBE5E949A /* Pods.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/RaspberryPiSDK.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RaspberryPiSDK/RaspberryPiSDK-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		B70C0BA419720D550089AA10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RaspberryPiSDK/RaspberryPiSDK-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RaspberryPiSDKTests/RaspberryPiSDKTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B70C0BA519720D550089AA10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RaspberryPiSDK/RaspberryPiSDK-Prefix.pch";
+				INFOPLIST_FILE = "RaspberryPiSDKTests/RaspberryPiSDKTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B70C0B7819720D550089AA10 /* Build configuration list for PBXProject "RaspberryPiSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B70C0B9E19720D550089AA10 /* Debug */,
+				B70C0B9F19720D550089AA10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B70C0BA019720D550089AA10 /* Build configuration list for PBXNativeTarget "RaspberryPiSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B70C0BA119720D550089AA10 /* Debug */,
+				B70C0BA219720D550089AA10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B70C0BA319720D550089AA10 /* Build configuration list for PBXNativeTarget "RaspberryPiSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B70C0BA419720D550089AA10 /* Debug */,
+				B70C0BA519720D550089AA10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B70C0B7519720D550089AA10 /* Project object */;
+}

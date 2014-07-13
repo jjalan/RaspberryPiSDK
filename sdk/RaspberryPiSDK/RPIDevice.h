@@ -10,8 +10,14 @@
 
 @interface RPIDevice : NSObject
 
--(id)initWithIpAddress:(NSString*)ipAddress;
+-(id)initWithIpAddress:(NSString*)ipAddress
+            macAddress:(NSString*)macAddress
+        lastDiscovered:(NSDate*)lastDiscovered;
 
 -(NSString*)ipAddress;
+-(NSString*)macAddress;
+-(NSDate*)lastDiscovered;
+-(NSString*)username;
+-(NSString*)password;
 
 @end

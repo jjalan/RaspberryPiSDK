@@ -6,6 +6,8 @@
 //
 //
 
+#import <Foundation/Foundation.h>
 #import "RPIDevice.h"
 #import "RPIDiscoveryManager.h"
 #import "RPISessionManager.h"
+#import "RPIError.h"

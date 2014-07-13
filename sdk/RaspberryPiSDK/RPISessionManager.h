@@ -7,9 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "RPIDevice.h"
 
 @interface RPISessionManager : NSObject
 
-+ (instancetype)sharedManager;
+-(instancetype)initWithDevice:(RPIDevice*)device;
+
+-(NSString*)executeCommand:(NSString*)command
+                     error:(NSError**)error;
 
 @end
