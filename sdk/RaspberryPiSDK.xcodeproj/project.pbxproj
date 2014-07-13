@@ -9,12 +9,6 @@
 /* Begin PBXBuildFile section */
 		1A8A8A26B6C7479A9186DA19 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB15EB263524DB8A3DC848F /* libPods.a */; };
 		B70C0B8119720D550089AA10 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70C0B8019720D550089AA10 /* Foundation.framework */; };
-		B70C0B8F19720D550089AA10 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70C0B8E19720D550089AA10 /* XCTest.framework */; };
-		B70C0B9019720D550089AA10 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70C0B8019720D550089AA10 /* Foundation.framework */; };
-		B70C0B9219720D550089AA10 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70C0B9119720D550089AA10 /* UIKit.framework */; };
-		B70C0B9519720D550089AA10 /* libRaspberryPiSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B70C0B7D19720D550089AA10 /* libRaspberryPiSDK.a */; };
-		B70C0B9B19720D550089AA10 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B70C0B9919720D550089AA10 /* InfoPlist.strings */; };
-		B70C0B9D19720D550089AA10 /* RaspberryPiSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B70C0B9C19720D550089AA10 /* RaspberryPiSDKTests.m */; };
 		B70C0BAC19720E350089AA10 /* RPISessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B70C0BAB19720E350089AA10 /* RPISessionManager.m */; };
 		B70C0BAF19720E440089AA10 /* RPIDiscoveryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B70C0BAE19720E440089AA10 /* RPIDiscoveryManager.m */; };
 		B70C0BB219720E640089AA10 /* RPIDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = B70C0BB119720E640089AA10 /* RPIDevice.m */; };
@@ -26,10 +20,16 @@
 		B755330B19726048007E8E3D /* RPIError.m in Sources */ = {isa = PBXBuildFile; fileRef = B755330A19726048007E8E3D /* RPIError.m */; };
 		B755330C1972605B007E8E3D /* RPIError.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B755330919726048007E8E3D /* RPIError.h */; };
 		B755330F1972618A007E8E3D /* RPINMSSHErrorHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B755330E1972618A007E8E3D /* RPINMSSHErrorHandler.m */; };
+		B7750E221973399200D88ECE /* RPISessionManagerInvalidIPAddressTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B7750E211973399200D88ECE /* RPISessionManagerInvalidIPAddressTests.m */; };
+		B7979E7E1973392E00A789F1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70C0B8E19720D550089AA10 /* XCTest.framework */; };
+		B7979E7F1973392E00A789F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70C0B8019720D550089AA10 /* Foundation.framework */; };
+		B7979E801973392E00A789F1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70C0B9119720D550089AA10 /* UIKit.framework */; };
+		B7979E861973392E00A789F1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B7979E841973392E00A789F1 /* InfoPlist.strings */; };
+		B7FC202519733CA8007490D0 /* libRaspberryPiSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B70C0B7D19720D550089AA10 /* libRaspberryPiSDK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B70C0B9319720D550089AA10 /* PBXContainerItemProxy */ = {
+		B7979E8A1973392E00A789F1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B70C0B7519720D550089AA10 /* Project object */;
 			proxyType = 1;
@@ -59,12 +59,8 @@
 		B70C0B7D19720D550089AA10 /* libRaspberryPiSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRaspberryPiSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B70C0B8019720D550089AA10 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B70C0B8419720D550089AA10 /* RaspberryPiSDK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RaspberryPiSDK-Prefix.pch"; sourceTree = "<group>"; };
-		B70C0B8D19720D550089AA10 /* RaspberryPiSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaspberryPiSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B70C0B8E19720D550089AA10 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		B70C0B9119720D550089AA10 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		B70C0B9819720D550089AA10 /* RaspberryPiSDKTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RaspberryPiSDKTests-Info.plist"; sourceTree = "<group>"; };
-		B70C0B9A19720D550089AA10 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B70C0B9C19720D550089AA10 /* RaspberryPiSDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RaspberryPiSDKTests.m; sourceTree = "<group>"; };
 		B70C0BA619720DE30089AA10 /* RaspberryPiSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RaspberryPiSDK.h; sourceTree = "<group>"; };
 		B70C0BAA19720E350089AA10 /* RPISessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPISessionManager.h; sourceTree = "<group>"; };
 		B70C0BAB19720E350089AA10 /* RPISessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPISessionManager.m; sourceTree = "<group>"; };
@@ -80,6 +76,12 @@
 		B755330A19726048007E8E3D /* RPIError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPIError.m; sourceTree = "<group>"; };
 		B755330D1972618A007E8E3D /* RPINMSSHErrorHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RPINMSSHErrorHandler.h; path = Internal/RPINMSSHErrorHandler.h; sourceTree = "<group>"; };
 		B755330E1972618A007E8E3D /* RPINMSSHErrorHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RPINMSSHErrorHandler.m; path = Internal/RPINMSSHErrorHandler.m; sourceTree = "<group>"; };
+		B7750E211973399200D88ECE /* RPISessionManagerInvalidIPAddressTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPISessionManagerInvalidIPAddressTests.m; sourceTree = "<group>"; };
+		B7979E7D1973392E00A789F1 /* RaspberryPiSDKUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaspberryPiSDKUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7979E831973392E00A789F1 /* RaspberryPiSDKUnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RaspberryPiSDKUnitTests-Info.plist"; sourceTree = "<group>"; };
+		B7979E851973392E00A789F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B7979E891973392E00A789F1 /* RaspberryPiSDKUnitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RaspberryPiSDKUnitTests-Prefix.pch"; sourceTree = "<group>"; };
+		B7FC202319733AF5007490D0 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		EFB15EB263524DB8A3DC848F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F787619F31894B6DBE5E949A /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,14 +96,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B70C0B8A19720D550089AA10 /* Frameworks */ = {
+		B7979E7A1973392E00A789F1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B70C0B8F19720D550089AA10 /* XCTest.framework in Frameworks */,
-				B70C0B9219720D550089AA10 /* UIKit.framework in Frameworks */,
-				B70C0B9519720D550089AA10 /* libRaspberryPiSDK.a in Frameworks */,
-				B70C0B9019720D550089AA10 /* Foundation.framework in Frameworks */,
+				B7FC202519733CA8007490D0 /* libRaspberryPiSDK.a in Frameworks */,
+				B7979E7E1973392E00A789F1 /* XCTest.framework in Frameworks */,
+				B7979E801973392E00A789F1 /* UIKit.framework in Frameworks */,
+				B7979E7F1973392E00A789F1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,7 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				B70C0B8219720D550089AA10 /* RaspberryPiSDK */,
-				B70C0B9619720D550089AA10 /* RaspberryPiSDKTests */,
+				B7979E811973392E00A789F1 /* RaspberryPiSDKUnitTests */,
 				B70C0B7F19720D550089AA10 /* Frameworks */,
 				B70C0B7E19720D550089AA10 /* Products */,
 				F787619F31894B6DBE5E949A /* Pods.xcconfig */,
@@ -123,7 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				B70C0B7D19720D550089AA10 /* libRaspberryPiSDK.a */,
-				B70C0B8D19720D550089AA10 /* RaspberryPiSDKTests.xctest */,
+				B7979E7D1973392E00A789F1 /* RaspberryPiSDKUnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,6 +133,7 @@
 		B70C0B7F19720D550089AA10 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B7FC202319733AF5007490D0 /* libPods.a */,
 				B70C0B8019720D550089AA10 /* Foundation.framework */,
 				B70C0B8E19720D550089AA10 /* XCTest.framework */,
 				B70C0B9119720D550089AA10 /* UIKit.framework */,
@@ -166,24 +169,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B70C0B9619720D550089AA10 /* RaspberryPiSDKTests */ = {
-			isa = PBXGroup;
-			children = (
-				B70C0B9C19720D550089AA10 /* RaspberryPiSDKTests.m */,
-				B70C0B9719720D550089AA10 /* Supporting Files */,
-			);
-			path = RaspberryPiSDKTests;
-			sourceTree = "<group>";
-		};
-		B70C0B9719720D550089AA10 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				B70C0B9819720D550089AA10 /* RaspberryPiSDKTests-Info.plist */,
-				B70C0B9919720D550089AA10 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		B75532FF19721BDF007E8E3D /* Internal */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +179,25 @@
 				B755330119721C1E007E8E3D /* RPILocalDeviceDiscoveryManager.m */,
 			);
 			name = Internal;
+			sourceTree = "<group>";
+		};
+		B7979E811973392E00A789F1 /* RaspberryPiSDKUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				B7750E211973399200D88ECE /* RPISessionManagerInvalidIPAddressTests.m */,
+				B7979E821973392E00A789F1 /* Supporting Files */,
+			);
+			path = RaspberryPiSDKUnitTests;
+			sourceTree = "<group>";
+		};
+		B7979E821973392E00A789F1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B7979E831973392E00A789F1 /* RaspberryPiSDKUnitTests-Info.plist */,
+				B7979E841973392E00A789F1 /* InfoPlist.strings */,
+				B7979E891973392E00A789F1 /* RaspberryPiSDKUnitTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,22 +222,22 @@
 			productReference = B70C0B7D19720D550089AA10 /* libRaspberryPiSDK.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		B70C0B8C19720D550089AA10 /* RaspberryPiSDKTests */ = {
+		B7979E7C1973392E00A789F1 /* RaspberryPiSDKUnitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B70C0BA319720D550089AA10 /* Build configuration list for PBXNativeTarget "RaspberryPiSDKTests" */;
+			buildConfigurationList = B7979E8E1973392F00A789F1 /* Build configuration list for PBXNativeTarget "RaspberryPiSDKUnitTests" */;
 			buildPhases = (
-				B70C0B8919720D550089AA10 /* Sources */,
-				B70C0B8A19720D550089AA10 /* Frameworks */,
-				B70C0B8B19720D550089AA10 /* Resources */,
+				B7979E791973392E00A789F1 /* Sources */,
+				B7979E7A1973392E00A789F1 /* Frameworks */,
+				B7979E7B1973392E00A789F1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B70C0B9419720D550089AA10 /* PBXTargetDependency */,
+				B7979E8B1973392E00A789F1 /* PBXTargetDependency */,
 			);
-			name = RaspberryPiSDKTests;
-			productName = RaspberryPiSDKTests;
-			productReference = B70C0B8D19720D550089AA10 /* RaspberryPiSDKTests.xctest */;
+			name = RaspberryPiSDKUnitTests;
+			productName = RaspberryPiSDKUnitTests;
+			productReference = B7979E7D1973392E00A789F1 /* RaspberryPiSDKUnitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -243,6 +247,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
+				TargetAttributes = {
+					B7979E7C1973392E00A789F1 = {
+						TestTargetID = B70C0B7C19720D550089AA10;
+					};
+				};
 			};
 			buildConfigurationList = B70C0B7819720D550089AA10 /* Build configuration list for PBXProject "RaspberryPiSDK" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -257,17 +266,17 @@
 			projectRoot = "";
 			targets = (
 				B70C0B7C19720D550089AA10 /* RaspberryPiSDK */,
-				B70C0B8C19720D550089AA10 /* RaspberryPiSDKTests */,
+				B7979E7C1973392E00A789F1 /* RaspberryPiSDKUnitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B70C0B8B19720D550089AA10 /* Resources */ = {
+		B7979E7B1973392E00A789F1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B70C0B9B19720D550089AA10 /* InfoPlist.strings in Resources */,
+				B7979E861973392E00A789F1 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,29 +329,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B70C0B8919720D550089AA10 /* Sources */ = {
+		B7979E791973392E00A789F1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B70C0B9D19720D550089AA10 /* RaspberryPiSDKTests.m in Sources */,
+				B7750E221973399200D88ECE /* RPISessionManagerInvalidIPAddressTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B70C0B9419720D550089AA10 /* PBXTargetDependency */ = {
+		B7979E8B1973392E00A789F1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B70C0B7C19720D550089AA10 /* RaspberryPiSDK */;
-			targetProxy = B70C0B9319720D550089AA10 /* PBXContainerItemProxy */;
+			targetProxy = B7979E8A1973392E00A789F1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B70C0B9919720D550089AA10 /* InfoPlist.strings */ = {
+		B7979E841973392E00A789F1 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B70C0B9A19720D550089AA10 /* en */,
+				B7979E851973392E00A789F1 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -444,7 +453,7 @@
 			};
 			name = Release;
 		};
-		B70C0BA419720D550089AA10 /* Debug */ = {
+		B7979E8C1973392E00A789F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
@@ -453,18 +462,22 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RaspberryPiSDK/RaspberryPiSDK-Prefix.pch";
+				GCC_PREFIX_HEADER = "RaspberryPiSDKUnitTests/RaspberryPiSDKUnitTests-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "RaspberryPiSDKTests/RaspberryPiSDKTests-Info.plist";
+				INFOPLIST_FILE = "RaspberryPiSDKUnitTests/RaspberryPiSDKUnitTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
 		};
-		B70C0BA519720D550089AA10 /* Release */ = {
+		B7979E8D1973392E00A789F1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
@@ -473,8 +486,12 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RaspberryPiSDK/RaspberryPiSDK-Prefix.pch";
-				INFOPLIST_FILE = "RaspberryPiSDKTests/RaspberryPiSDKTests-Info.plist";
+				GCC_PREFIX_HEADER = "RaspberryPiSDKUnitTests/RaspberryPiSDKUnitTests-Prefix.pch";
+				INFOPLIST_FILE = "RaspberryPiSDKUnitTests/RaspberryPiSDKUnitTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -501,11 +518,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B70C0BA319720D550089AA10 /* Build configuration list for PBXNativeTarget "RaspberryPiSDKTests" */ = {
+		B7979E8E1973392F00A789F1 /* Build configuration list for PBXNativeTarget "RaspberryPiSDKUnitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B70C0BA419720D550089AA10 /* Debug */,
-				B70C0BA519720D550089AA10 /* Release */,
+				B7979E8C1973392E00A789F1 /* Debug */,
+				B7979E8D1973392E00A789F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

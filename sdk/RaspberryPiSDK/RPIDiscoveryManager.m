@@ -109,11 +109,6 @@ NSString* const RPIDeviceInNetworkUpdated = @"RPIDeviceInNetworkUpdated";
         raiseNotification = YES;
     }
     else{
-        
-        // raise notification if ipaddress is different
-        if([d.ipAddress length] > 0
-           && [device.ipAddress length] > 0
-           && device)
     }
 }
 -(void)onRPIDeviceDiscoveryManagerCompleted

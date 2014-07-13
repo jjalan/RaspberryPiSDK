@@ -39,7 +39,7 @@
     NMSSHSession* session = [self getSessionWithError:error];
     if(session != nil)
     {
-        return [session.channel execute:error
+        return [session.channel execute:command
                                   error:error];
     }
     else
@@ -76,7 +76,7 @@
                 if(error != nil
                    && *error != nil)
                 {
-                    **error = [[RPINMSSHErrorHandler sharedInstance] lastError];
+                    *error = [[RPINMSSHErrorHandler sharedInstance] lastError];
                 }
             }
         }
@@ -87,7 +87,7 @@
             if(error != nil
                && *error != nil)
             {
-                **error = [[RPINMSSHErrorHandler sharedInstance] lastError];
+                *error = [[RPINMSSHErrorHandler sharedInstance] lastError];
             }
         }
     }
