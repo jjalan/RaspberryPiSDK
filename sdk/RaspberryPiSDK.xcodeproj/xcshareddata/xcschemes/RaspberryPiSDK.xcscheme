@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B7979E7C1973392E00A789F1"
+               BlueprintIdentifier = "B78E796B197346D30022FBC7"
                BuildableName = "RaspberryPiSDKUnitTests.xctest"
                BlueprintName = "RaspberryPiSDKUnitTests"
                ReferencedContainer = "container:RaspberryPiSDK.xcodeproj">
