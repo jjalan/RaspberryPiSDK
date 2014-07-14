@@ -39,7 +39,7 @@
     
     [sessionManager executeCommand:@"ls l" error:&error];
     
-    NSAssert(error != nil, @"Error should not be nil");
+    XCTAssertNotNil(error, @"error should not be nil");
 }
 
 @end

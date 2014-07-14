@@ -73,8 +73,7 @@
                 [self.session disconnect];
                 self.session = nil;
                 
-                if(error != nil
-                   && *error != nil)
+                if(error != nil)
                 {
                     *error = [[RPINMSSHErrorHandler sharedInstance] lastError];
                 }
@@ -84,8 +83,7 @@
         {
             self.session = nil;
             
-            if(error != nil
-               && *error != nil)
+            if(error != nil)
             {
                 *error = [[RPINMSSHErrorHandler sharedInstance] lastError];
             }

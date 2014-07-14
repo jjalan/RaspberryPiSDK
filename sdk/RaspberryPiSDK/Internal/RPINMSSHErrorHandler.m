@@ -16,8 +16,9 @@
 
 @implementation RPINMSSHErrorHandler
 
-+ (void) initialize
++ (void) load
 {
+    [NMSSHLogger logger].loggerQueue = nil;
     [[NMSSHLogger logger] setLogBlock:^(NMSSHLogLevel level, NSString *format) {
         
         NSString* message = [NSString stringWithFormat:@"%@", format];

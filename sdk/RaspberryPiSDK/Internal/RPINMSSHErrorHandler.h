@@ -11,7 +11,6 @@
 @interface RPINMSSHErrorHandler : NSObject
 
 +(instancetype)sharedInstance;
-
 -(NSError*)lastError;
 
 @end
